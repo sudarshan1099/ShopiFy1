@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz@8..60&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <style>
+    #manageButton{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+            
+    }
+    button{
+            margin-bottom: 20%;
+            margin-top: 16%;
+            border: none;
+            padding: 1% 5%;
+            border-radius: 10%;
+            background-color: aqua;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        button:hover{
+            background-color: rgb(209, 242, 133);
+            color: rgb(115, 25, 195);
+        }
+      
+    </style>
+</head>
+<body>
+
+    <div id="nav">
+        <div><a href="index.html"><img id="shopifyLogo" src="logo.png" alt=""></a></a></div>
+        <div>
+            <a href="mens.html">MEN</a>
+            <a href="women.html">WOMEN</a>
+            <a href="kid.html">KIDS</a>
+            <a href="cart.html">CART</a>
+            <a href="signup.html">SIGNUP</a>
+            <a href="login.html">LOGIN</a>
+        </div>
+    </div>
+
+    <div id="manageButton">
+        <button>Logout</button>
+    </div>
+    
+
+</body>
+</html>
+
+<script>
+      let loggedDetails = {
+        userName : localStorage.getItem("loggedUserEmail"),
+        password : localStorage.getItem("loggedUserPassword")
+     };
+
+     if(loggedDetails.userName !=null && loggedDetails.password != null){
+        document.querySelector("#nav>div:nth-child(2)").innerHTML = 
+        ` <a href="mens.html">MEN</a>
+            <a href="women.html">WOMEN</a>
+            <a href="kid.html">KIDS</a>
+            <a href="cart.html">CART</a>
+            <a href="logout.html">LOGOUT</a>`;
+    }
+
+
+    document.querySelector("button").addEventListener("click",function(){
+            localStorage.removeItem("loggedUserEmail");
+            localStorage.removeItem("loggedUserPassword");
+            alert("Logout Successful.")
+            window.location.href = "index.html";
+    });
+        
+    
+
+
+</script>

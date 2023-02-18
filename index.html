@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz@8..60&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</head>
+<body>
+
+    <div id="nav">
+        <div ><a href="index.html"><img id="shopifyLogo" src="logo.png" alt=""></a></div>
+        <div>
+            <a href="mens.html">MEN</a>
+            <a href="women.html">WOMEN</a>
+            <a href="kid.html">KIDS</a>
+            <a href="cart.html">CART</a>
+            <a href="signup.html">SIGNUP</a>
+            <a href="login.html">LOGIN</a>
+        </div>
+    </div> 
+
+    <div id="slider">
+
+    <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }' id="upside">
+        <div class="carousel-cell">
+            <img class="w3-image" src="https://assets.ajio.com/cms/AJIO/WEB/15022023-WHP-D-topbanner-p2-veromoda-misschase-starting299-extra30.jpg">
+          </div>
+  
+        <div class="carousel-cell">
+          <img class="w3-image" src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/5/3/a20271c6-249f-480b-bcc7-1b150516e54e1651599573998-Dressberry_Desk.jpg">
+        </div>
+
+        <div class="carousel-cell">
+          <img class="w3-image" src="https://assets.ajio.com/cms/AJIO/WEB/15022023-WHP-D-dailybanner-p5-ishin-aks-min60-extraupto25.jpg">
+        </div>
+
+        <div class="carousel-cell">
+          <img class="w3-image" src="https://assets.ajio.com/cms/AJIO/WEB/15022023-WHP-D-topbanner-p2-veromoda-misschase-starting299-extra30.jpg">
+        </div>
+
+        <div class="carousel-cell">
+            <img class="w3-image" src="https://assets.ajio.com/cms/AJIO/WEB/16022023-WHP-D-topbanner-p3-max-upto50.jpg">
+          </div>
+
+          <div class="carousel-cell">
+            <img class="w3-image" src="https://assets.ajio.com/cms/AJIO/WEB/16022023-D-KHP-banner1-p2-brands-min60.jpg">
+          </div>
+
+          <div class="carousel-cell">
+            <img class="w3-image" src="https://assets.ajio.com/cms/AJIO/WEB/16022023-d-mhp-daily-p3-brands-starting499.jpg">
+          </div>
+
+          <div class="carousel-cell">
+            <img class="w3-image" src="https://assets.ajio.com/cms/AJIO/WEB/15022023-D-KHP-banner1-p2-brands-min40.jpg">
+          </div>
+
+      </div>
+    </div>
+
+
+<!-- 
+    <form id="signupForm" style="margin-top: 2.5%; margin-bottom: 11%;">
+        <h2>Add Products</h2>
+        <label for="">Product Image</label>
+        <input type="text" placeholder="Product Image " id="prodcutImage">
+
+        <label for="">Product Name</label>
+        <input type="text" placeholder="Product Name" id="productName">
+
+        <label for="">Product Description</label>
+        <input type="text" placeholder="Product Description" id="productDescription">
+
+        <label for="">Gender</label>
+       <select  id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="kid">Kid</option>
+
+       </select>
+        <label for="">Price</label>
+        <input type="number" placeholder="Price" id="productPrice">
+
+        <label for="">Offer Price</label>
+        <input type="number" placeholder="Entered password" id="offerPrice">
+        <p id="repasswordError"></p>
+
+        <input type="submit" name="" value="Add Product" >
+    </form> -->
+
+    <h1 id="index_section_title">DEAL OF THE DAY</h1>
+    <div id="deals_of_the_day"></div>
+
+    <h1 id="index_section_title">BEST OF MYNTRA EXCLUSIVE BRANDS</h1>
+    <div id="best_of_brands"></div>
+
+    
+    <h1 id="index_section_title">DEALS ON TOP BRANDS</h1>
+    <div id="deals_of_brands"></div>
+
+    
+    <h1 id="index_section_title">BRANDS AT SLASHED PRICES</h1>
+    <div id="slashed_prices"></div>
+
+        
+    <h1 id="index_section_title">GIFTING CARDS</h1>
+    <div id="gifting_cards"></div>
+
+        
+    <h1 id="index_section_title">COLOURS OF THE SEASON</h1>
+    <div id="closure_fo_the_season"></div>
+    
+    <div id="footer" >
+        
+      <div>
+          <div><img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Free-shipping.svg" alt=""></div>
+          <div>
+              <p>FREE SHIPPING</p>
+              <hr>
+              <p>On Orders Above</p>
+              <p>₹299</p>
+          </div>
+      </div>
+
+      <div>
+          <div><img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/return_accepted.svg" alt=""></div>
+          <div>
+              <p>EASY RETURNS</p>
+              <hr>
+              <p>15-Day Return Policy</p>
+          </div>
+      </div>
+      
+      <div>
+          <div><img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Authenticity.svg" alt=""></div>
+          <div>
+              <p>100%</p>
+              <p>AUTHENTIC</p>
+              <hr>
+              <p>Products Sourced Directly</p>
+          </div>
+      </div>
+
+      <div>
+          <div><img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Brands.svg" alt=""></div>
+          <div>
+              <p>100%</p>
+              <p>1900+ BRANDS</p>
+              <hr>
+              <p>1.2 Lakh+ Products</p>
+          </div>
+      </div>
+
+      <div>
+          <div><p>Show us some love ❤ on social media</p></div>
+          <hr>
+          <div>
+             <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-instagram-filled.svg" alt="">
+             <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-facebook-filled.svg" alt="">
+             <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-youtube-filled.svg" alt="">
+             <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-twitter-filled.svg" alt="">
+             <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-pinterest-filled.svg" alt="">
+          </div>
+      </div>
+    </div>
+
+</body>
+</html>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script>
+
+let loggedDetails = {
+        userName : localStorage.getItem("loggedUserEmail"),
+        password : localStorage.getItem("loggedUserPassword")
+     };
+
+     if(loggedDetails.userName !=null && loggedDetails.password != null){
+        document.querySelector("#nav>div:nth-child(2)").innerHTML = 
+        ` <a href="mens.html">MEN</a>
+            <a href="women.html">WOMEN</a>
+            <a href="kid.html">KIDS</a>
+            <a href="cart.html">CART</a>
+            <a href="logout.html">LOGOUT</a>`;
+    }
+
+// slidShowFunction(slideShowImages);
+//     function slidShowFunction(slideShowImages){
+
+//         slideShow.innerHTML = null;
+//         let slideImageTag = document.createElement('img');
+//         slideImageTag.setAttribute("src","https://assets.ajio.com/cms/AJIO/WEB/18022023-D-KHP-topbannercarousel-p6-max-starting149.jpg");
+//         slideShow.append(slideImageTag);
+
+//         let i = 0;
+//         let letSlideInterval = setInterval(function(){
+//             i++;
+//             if(i>=slideShowImages.length){
+//                 i=0;
+//             }
+
+//         slideShow.innerHTML = null;
+//         let slideImageTag = document.createElement('img');
+//         slideImageTag.setAttribute("src",slideShowImages[i].avatar);
+//          slideShow.append(slideImageTag);
+
+//         },1000)
+//     }
+
+
+  localStorage.setItem("Ecommerse_Products",JSON.stringify([
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20221202/c3dF/63892fe0f997ddfdbdb199a8/-473Wx593H-465377031-green-MODEL.jpg",
+        "title": "KIMAYRA",
+        "desc": "GULMOHAR JAIPUR",
+        "price": "1139",
+        "gender": "female",
+        "offer": "2299"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20210914/jyQw/6140c750f997ddce89c6d912/-473Wx593H-462957265-maroon-MODEL.jpg",
+        "title": "LOVISTA",
+        "desc": "Printed Anarkali Kurta Set with Dupatta",
+        "price": "1290",
+        "gender": "female",
+        "offer": "2299"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20210902/RMkd/612fe8cff997ddce89b67558/-473Wx593H-462888320-navy-MODEL.jpg",
+        "title": "JANASYA",
+        "desc": "Floral Print Anarkali Kurta Set",
+        "price": "1319",
+        "gender": "female",
+        "offer": "2999"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20221222/Dvyw/63a47580f997ddfdbdee408c/-473Wx593H-465483734-black-MODEL.jpg",
+        "title": "JAPNAAM",
+        "desc": "mbellished Round-Neck Kurta & Pant Set with Dupatta",
+        "price": "1150",
+        "gender": "female",
+        "offer": "2499"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20220709/Lz3h/62c89f94aeb26921af6dfeea/-473Wx593H-464620562-mustard-MODEL.jpg",
+        "title": "INDIE CLOSET",
+        "desc": "Floral Print Anarkali Kurta Set",
+        "price": "1349",
+        "gender": "female",
+        "offer": "3999"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20220523/j6O0/628b7a36aeb26921afc736ae/-473Wx593H-464366270-pink-MODEL.jpg",
+        "title": "GULMOHAR JAIPUR",
+        "desc": "Floral Print Anarkali Kurta Set",
+        "price": "1499",
+        "gender": "female",
+        "offer": "3499"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20220523/tjO6/628b9772aeb26921afc89eb3/-473Wx593H-464366340-pink-MODEL.jpg",
+        "title": "GULMOHAR JAIPUR",
+        "desc": "Floral Print Flared Kurta Suit Set",
+        "price": "1599",
+        "gender": "female",
+        "offer": "3499"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20221209/BCBS/63924b58f997ddfdbdc8b34c/gulmohar-jaipur-brown-flared-floral-print-flared-kurta-suit-set.jpg",
+        "title": "GULMOHAR JAIPUR",
+        "desc": "Floral Print Flared Kurta Suit Set",
+        "price": "1443",
+        "gender": "female",
+        "offer": "3699"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20221216/BgpL/639c8deff997ddfdbdd9a740/-473Wx593H-465445487-navy-MODEL.jpg",
+        "title": "GULMOHAR JAIPUR",
+        "desc": "Floral Print Flared Kurta Set with Dupatta",
+        "price": "1499",
+        "gender": "female",
+        "offer": "3699"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20221213/XZpV/63979a69f997ddfdbdcffc8e/-473Wx593H-465428509-indigo-MODEL.jpg",
+        "title": "OMASK",
+        "desc": "OMASK",
+        "price": "1350",
+        "gender": "female",
+        "offer": "4999"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20221203/8MqB/638a6413aeb269659ccc47b8/-473Wx593H-465378436-cream-MODEL.jpg",
+        "title": "JC4U",
+        "desc": "Floral Print Straight Kurta Set",
+        "price": "1440",
+        "gender": "female",
+        "offer": "299"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20220730/gido/62e4f1adf997dd03e20d0619/-473Wx593H-464125074-red-MODEL.jpg",
+        "title": "ZIVA FASHION",
+        "desc": "Floral Print Straight Kurta Set",
+        "price": "1299",
+        "gender": "female",
+        "offer": "2999"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20220914/QLLi/6320fdc0f997dd1f8dfd8640/-473Wx593H-464990111-maroon-MODEL2.jpg",
+        "title": "NISHABD",
+        "desc": "Printed A-line Kurta Suit Set",
+        "price": "1399",
+        "gender": "female",
+        "offer": "2999"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20220124/8ATC/61eeae7af997dd662337baf6/-473Wx593H-463263507-yellow-MODEL.jpg",
+        "title": "GULMOHAR JAIPUR",
+        "desc": "Floral Printed Straight Kurta Set",
+        "price": "1499",
+        "gender": "female",
+        "offer": "2499"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20220926/Zeav/6331a0daaeb269dbb3a7b86a/-473Wx593H-465060124-black-MODEL2.jpg",
+        "title": "MAUKA",
+        "desc": "Floral Print Straight Kurta Set",
+        "price": "1400",
+        "gender": "female",
+        "offer": "3499"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20221130/o0nM/638696e1aeb269659cc34342/kurtipedia-red-straight-floral-pattern-straight-kurta-set.jpg",
+        "title": "MAUKA",
+        "desc": "Floral Print Straight Kurta Set",
+        "price": "1400",
+        "gender": "female",
+        "offer": "3499"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20230113/TCLV/63c0eeeaaeb269c651ddd9e0/prakhya-green-straight-floral-print-straight-kurta-set-with-dupatta.jpg",
+        "title": "PRAKHYA",
+        "desc": "Floral Print Straight Kurta Set with Dupatta",
+        "price": "1499",
+        "gender": "female",
+        "offer": "2998"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20221011/Z22T/63450480aeb269659c39c503/-473Wx593H-465033361-grey-MODEL.jpg",
+        "title": "GORGONE",
+        "desc": "Mysore Silk Ethnic Motifs Saree",
+        "price": "358",
+        "gender": "female",
+        "offer": "1998"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20220921/gO1M/632af6ebaeb269dbb39ba254/-473Wx593H-465033049-beige-MODEL.jpg",
+        "title": "SVENJA",
+        "desc": "Floral Print Saree",
+        "price": "500",
+        "gender": "female",
+        "offer": "2999"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20220513/2a7U/627e22b4f997dd03e2b9a1f2/-473Wx593H-462067313-blue-MODEL.jpg",
+        "title": "THE BEAR HOUSE",
+        "desc": "Checked Button-down Shirt",
+        "gender": "male",
+        "price": "1299",
+        "offer": "5999"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20220324/hmQq/623c6fdef997dd03e22cd5a7/-473Wx593H-463775643-blue-MODEL.jpg",
+        "title": "CAMPUS SUTRA",
+        "desc": "Checked Shirt with Patch Pocket",
+        "gender": "male",
+        "price": "1999",
+        "offer": "2999"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20221216/25KZ/639c8f05f997ddfdbdd9c9cf/-473Wx593H-465448349-maroon-MODEL3.jpg",
+        "title": "THE BEAR HOUSE",
+        "desc": "Checked Slim Fit Shirt with Patch Pocket",
+        "gender": "male",
+        "price": "1668",
+        "offer": "2945"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20221219/AwH8/63a0a05df997ddfdbdddf9bb/-473Wx593H-465450868-orange-MODEL.jpg",
+        "title": "CROCODILE",
+        "desc": "Micro Print Shirt with Patch Pocket",
+        "gender": "male",
+        "price": "1668",
+        "offer": "2499"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20220629/sFkx/62bc0339aeb26921af4f49b4/-473Wx593H-469234311-green-MODEL.jpg",
+        "title": "BRITISH CLUB",
+        "desc": "Checked Slim Fit Shirt with Patch Pocket",
+        "gender": "male",
+        "price": "838",
+        "offer": "1999"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20210316/cFR7/604fbf63aeb2696981866bb8/-473Wx593H-460698912-cream-MODEL.jpg",
+        "title": "THE INDIAN GARAGE CO",
+        "desc": "Checked Slim Fit Shirt with Patch Pocket",
+        "gender": "male",
+        "price": "612",
+        "offer": "1999"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20220119/SuIv/61e83255f997dd66232a5474/-473Wx593H-469034807-mustard-MODEL.jpg",
+        "title": "KETCH",
+        "desc": "Embroidered Slim Fit Shirt with Patch Pocket",
+        "gender": "male",
+        "price": "532",
+        "offer": "1399"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20220119/SuIv/61e83255f997dd66232a5474/-473Wx593H-469034807-mustard-MODEL.jpg",
+        "title": "KETCH",
+        "desc": "Embroidered Slim Fit Shirt with Patch Pocket",
+        "gender": "male",
+        "price": "532",
+        "offer": "1399"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20220908/XRfc/631910bbf997dd1f8dec9a54/-473Wx593H-464957923-white-MODEL.jpg",
+        "title": "AUSK",
+        "desc": "Striped Crew-Neck T-shirt",
+        "gender": "male",
+        "price": "400",
+        "offer": "999"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20210518/gktS/60a3ed67aeb269a9e3c25b98/-473Wx593H-460907297-white-MODEL.jpg",
+        "title": "THE INDIAN GARAGE CO",
+        "desc": "Checked Slim Fit Shirt with Patch Pocket",
+        "gender": "male",
+        "price": "525",
+        "offer": "1700"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20211123/NY4H/619d0655aeb2690110d305e0/-473Wx593H-469034751-navymulti-MODEL.jpg",
+        "title": "KETCH",
+        "desc": "Checked Slim Fit Shirt with Patch Pocket",
+        "gender": "male",
+        "price": "405",
+        "offer": "1599"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20220819/xwUR/62fe946daeb2691761846872/-473Wx593H-461150789-cream-MODEL4.jpg",
+        "title": "BENE KLEED",
+        "desc": "Floral Print Slim Fit Shirt",
+        "gender": "male",
+        "price": "945",
+        "offer": "1500"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20210923/Jd2s/614b77e4aeb269a2689f718e/-473Wx593H-469009785-blue-MODEL.jpg",
+        "title": "THE INDIAN GARAGE CO",
+        "desc": "Slim Fit Denim Shirt with Patch Pocket",
+        "gender": "male",
+        "price": "610",
+        "offer": "999"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20221220/B8Dk/63a1cff0f997ddfdbde49e3d/-473Wx593H-469412375-green-MODEL.jpg",
+        "title": "BROWN BROTHERS",
+        "desc": "Leaf Printed Shirt",
+        "gender": "male",
+        "price": "648",
+        "offer": "1200"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20230116/Z86W/63c5644ef997dd708e0946d2/-473Wx593H-463873437-multi-MODEL3.jpg",
+        "title": "Floral Print Pants with Top",
+        "desc": "Floral Print Pants with Top",
+        "gender": "kid",
+        "price": "990",
+        "offer": "1999"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20230103/yBL0/63b34ee6aeb269659c1f22ae/-473Wx593H-465540787-blue-MODEL.jpg",
+        "title": "PSPEACHES",
+        "desc": "Floral Print Lehenga Choli with Dupatta Set",
+        "gender": "kid",
+        "price": "1736",
+        "offer": "1999"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20230103/ys4z/63b348b9f997ddfdbd0b5559/-473Wx593H-465541021-blue-MODEL.jpg",
+        "title": "PSPEACHES",
+        "desc": "Floral Pattern Round-Neck Kurta Set",
+        "gender": "kid",
+        "price": "1399",
+        "offer": "1999"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20221011/HWSF/634486def997ddfdbd1b5974/-473Wx593H-465130679-blue-MODEL.jpg",
+        "title": "BITIYA BY BHAMA",
+        "desc": "Printed Flared Kurta with Pant",
+        "gender": "kid",
+        "price": "1400",
+        "offer": "1900"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20221008/luye/6340912ff997ddfdbd0f4fcc/-473Wx593H-465117104-blue-MODEL.jpg",
+        "title": "BITIYA BY BHAMA",
+        "desc": "Floral Print Kurta with Sharara Set",
+        "gender": "kid",
+        "price": "1500",
+        "offer": "2999"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20220921/O2X8/632a289baeb269dbb39918d8/-473Wx593H-465026334-blue-MODEL.jpg",
+        "title": "PSPEACHES",
+        "desc": "Floral Kurta Suit Set",
+        "gender": "kid",
+        "price": "1599",
+        "offer": "2599"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20220921/vaOn/632a2408aeb269dbb398b5e3/-473Wx593H-465026127-blue-MODEL.jpg",
+        "title": "PSPEACHES",
+        "desc": "Floral Lehenga Choli with Dupatta Set",
+        "gender": "kid",
+        "price": "2000",
+        "offer": "2999"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20220921/waOd/632a239caeb269dbb398aca0/-473Wx593H-465025888-green-MODEL.jpg",
+        "title": "PSPEACHES",
+        "desc": "Floral Lehenga Choli with Dupatta Set",
+        "gender": "kid",
+        "price": "1899",
+        "offer": "2999"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20221103/Oxg7/6363d083f997ddfdbd55f972/-473Wx593H-461786977-pink-MODEL.jpg",
+        "title": "NAUGHTY NINOS",
+        "desc": "Floral Embroidered Jumpsuit with Waist Tie-up",
+        "gender": "kid",
+        "price": "1500",
+        "offer": "3000"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20221206/KWls/638f671eaeb269659cd5ab17/-473Wx593H-464077450-black-MODEL.jpg",
+        "title": "NAUGHTY NINOS",
+        "desc": "Floral Print Jumpsuit with Tie-Up",
+        "gender": "kid",
+        "price": "899",
+        "offer": "299"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20220521/GGYq/6287fe3ff997dd03e2ff090d/-473Wx593H-464363252-pink-MODEL.jpg",
+        "title": "NAUGHTY NINOS",
+        "desc": "Striped Jumpsuit with Waist Tie-Up",
+        "gender": "kid",
+        "price": "985",
+        "offer": "1599"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20220627/BxKy/62b9c457aeb26921af4887a9/-473Wx593H-464548267-blue-MODEL.jpg",
+        "title": "LILPICKS",
+        "desc": "Printed Sleeveless Jumpsuit",
+        "gender": "kid",
+        "price": "836",
+        "offer": "1499"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20220627/3o8V/62b9c3c0f997dd03e29fd19a/-473Wx593H-464548263-black-MODEL.jpg",
+        "title": "LILPICKS",
+        "desc": "Printed Sleeveless Jumpsuit",
+        "gender": "kid",
+        "price": "600",
+        "offer": "1499"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20220511/2PIj/627b7ff6aeb26921af66a101/-473Wx593H-464078393-pink-MODEL.jpg",
+        "title": "STYLOBUG",
+        "desc": "Floral Print Jumpsuit with Waist Tie-up",
+        "gender": "kid",
+        "price": "848",
+        "offer": "2495"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20221007/6a93/633f48c8aeb269659c282d37/-473Wx593H-465108272-pink-MODEL.jpg",
+        "title": "R K MANIYAR",
+        "desc": "Floral Print Ruffled Jumpsuit",
+        "gender": "kid",
+        "price": "1660",
+        "offer": "1499"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20220823/TR7Z/6303e54ff997dd394c10a443/-473Wx593H-464856205-pink-MODEL.jpg",
+        "title": "R K MANIYAR",
+        "desc": "Graphic Printed Regular Fit Jumpsuit",
+        "gender": "kid",
+        "price": "417",
+        "offer": "1800"
+    },
+    {
+        "avatar": "https://assets.ajio.com/medias/sys_master/root/20220810/dTrm/62f359e1aeb26921afda639b/-473Wx593H-464192671-burgundy-MODEL.jpg",
+        "title": "PINK CHICK",
+        "desc": "Embellished Fit & Flare Dress",
+        "gender": "kid",
+        "price": "2300",
+        "offer": "3999"
+    }
+]))
+// {
+//     let addProductForm = document.querySelector("#signupForm");
+
+    
+// //     let productsApi = [{
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20221202/c3dF/63892fe0f997ddfdbdb199a8/-473Wx593H-465377031-green-MODEL.jpg",
+// //         "title": "KIMAYRA",
+// //         "desc": "GULMOHAR JAIPUR",
+// //         "price": "1139",
+// //         "gender": "female",
+// //         "offer": "2299"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20210914/jyQw/6140c750f997ddce89c6d912/-473Wx593H-462957265-maroon-MODEL.jpg",
+// //         "title": "LOVISTA",
+// //         "desc": "Printed Anarkali Kurta Set with Dupatta",
+// //         "price": "1290",
+// //         "gender": "female",
+// //         "offer": "2299"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20210902/RMkd/612fe8cff997ddce89b67558/-473Wx593H-462888320-navy-MODEL.jpg",
+// //         "title": "JANASYA",
+// //         "desc": "Floral Print Anarkali Kurta Set",
+// //         "price": "1319",
+// //         "gender": "female",
+// //         "offer": "2999"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20221222/Dvyw/63a47580f997ddfdbdee408c/-473Wx593H-465483734-black-MODEL.jpg",
+// //         "title": "JAPNAAM",
+// //         "desc": "mbellished Round-Neck Kurta & Pant Set with Dupatta",
+// //         "price": "1150",
+// //         "gender": "female",
+// //         "offer": "2499"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20220709/Lz3h/62c89f94aeb26921af6dfeea/-473Wx593H-464620562-mustard-MODEL.jpg",
+// //         "title": "INDIE CLOSET",
+// //         "desc": "Floral Print Anarkali Kurta Set",
+// //         "price": "1349",
+// //         "gender": "female",
+// //         "offer": "3999"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20220523/j6O0/628b7a36aeb26921afc736ae/-473Wx593H-464366270-pink-MODEL.jpg",
+// //         "title": "GULMOHAR JAIPUR",
+// //         "desc": "Floral Print Anarkali Kurta Set",
+// //         "price": "1499",
+// //         "gender": "female",
+// //         "offer": "3499"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20220523/tjO6/628b9772aeb26921afc89eb3/-473Wx593H-464366340-pink-MODEL.jpg",
+// //         "title": "GULMOHAR JAIPUR",
+// //         "desc": "Floral Print Flared Kurta Suit Set",
+// //         "price": "1599",
+// //         "gender": "female",
+// //         "offer": "3499"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20221209/BCBS/63924b58f997ddfdbdc8b34c/gulmohar-jaipur-brown-flared-floral-print-flared-kurta-suit-set.jpg",
+// //         "title": "GULMOHAR JAIPUR",
+// //         "desc": "Floral Print Flared Kurta Suit Set",
+// //         "price": "1443",
+// //         "gender": "female",
+// //         "offer": "3699"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20221216/BgpL/639c8deff997ddfdbdd9a740/-473Wx593H-465445487-navy-MODEL.jpg",
+// //         "title": "GULMOHAR JAIPUR",
+// //         "desc": "Floral Print Flared Kurta Set with Dupatta",
+// //         "price": "1499",
+// //         "gender": "female",
+// //         "offer": "3699"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20221213/XZpV/63979a69f997ddfdbdcffc8e/-473Wx593H-465428509-indigo-MODEL.jpg",
+// //         "title": "OMASK",
+// //         "desc": "OMASK",
+// //         "price": "1350",
+// //         "gender": "female",
+// //         "offer": "4999"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20221203/8MqB/638a6413aeb269659ccc47b8/-473Wx593H-465378436-cream-MODEL.jpg",
+// //         "title": "JC4U",
+// //         "desc": "Floral Print Straight Kurta Set",
+// //         "price": "1440",
+// //         "gender": "female",
+// //         "offer": "299"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20220730/gido/62e4f1adf997dd03e20d0619/-473Wx593H-464125074-red-MODEL.jpg",
+// //         "title": "ZIVA FASHION",
+// //         "desc": "Floral Print Straight Kurta Set",
+// //         "price": "1299",
+// //         "gender": "female",
+// //         "offer": "2999"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20220914/QLLi/6320fdc0f997dd1f8dfd8640/-473Wx593H-464990111-maroon-MODEL2.jpg",
+// //         "title": "NISHABD",
+// //         "desc": "Printed A-line Kurta Suit Set",
+// //         "price": "1399",
+// //         "gender": "female",
+// //         "offer": "2999"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20220124/8ATC/61eeae7af997dd662337baf6/-473Wx593H-463263507-yellow-MODEL.jpg",
+// //         "title": "GULMOHAR JAIPUR",
+// //         "desc": "Floral Printed Straight Kurta Set",
+// //         "price": "1499",
+// //         "gender": "female",
+// //         "offer": "2499"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20220926/Zeav/6331a0daaeb269dbb3a7b86a/-473Wx593H-465060124-black-MODEL2.jpg",
+// //         "title": "MAUKA",
+// //         "desc": "Floral Print Straight Kurta Set",
+// //         "price": "1400",
+// //         "gender": "female",
+// //         "offer": "3499"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20221130/o0nM/638696e1aeb269659cc34342/kurtipedia-red-straight-floral-pattern-straight-kurta-set.jpg",
+// //         "title": "MAUKA",
+// //         "desc": "Floral Print Straight Kurta Set",
+// //         "price": "1400",
+// //         "gender": "female",
+// //         "offer": "3499"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20230113/TCLV/63c0eeeaaeb269c651ddd9e0/prakhya-green-straight-floral-print-straight-kurta-set-with-dupatta.jpg",
+// //         "title": "PRAKHYA",
+// //         "desc": "Floral Print Straight Kurta Set with Dupatta",
+// //         "price": "1499",
+// //         "gender": "female",
+// //         "offer": "2998"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20221011/Z22T/63450480aeb269659c39c503/-473Wx593H-465033361-grey-MODEL.jpg",
+// //         "title": "GORGONE",
+// //         "desc": "Mysore Silk Ethnic Motifs Saree",
+// //         "price": "358",
+// //         "gender": "female",
+// //         "offer": "1998"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20220921/gO1M/632af6ebaeb269dbb39ba254/-473Wx593H-465033049-beige-MODEL.jpg",
+// //         "title": "SVENJA",
+// //         "desc": "Floral Print Saree",
+// //         "price": "500",
+// //         "gender": "female",
+// //         "offer": "2999"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20220513/2a7U/627e22b4f997dd03e2b9a1f2/-473Wx593H-462067313-blue-MODEL.jpg",
+// //         "title": "THE BEAR HOUSE",
+// //         "desc": "Checked Button-down Shirt",
+// //         "gender": "male",
+// //         "price": "1299",
+// //         "offer": "5999"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20220324/hmQq/623c6fdef997dd03e22cd5a7/-473Wx593H-463775643-blue-MODEL.jpg",
+// //         "title": "CAMPUS SUTRA",
+// //         "desc": "Checked Shirt with Patch Pocket",
+// //         "gender": "male",
+// //         "price": "1999",
+// //         "offer": "2999"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20221216/25KZ/639c8f05f997ddfdbdd9c9cf/-473Wx593H-465448349-maroon-MODEL3.jpg",
+// //         "title": "THE BEAR HOUSE",
+// //         "desc": "Checked Slim Fit Shirt with Patch Pocket",
+// //         "gender": "male",
+// //         "price": "1668",
+// //         "offer": "2945"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20221219/AwH8/63a0a05df997ddfdbdddf9bb/-473Wx593H-465450868-orange-MODEL.jpg",
+// //         "title": "CROCODILE",
+// //         "desc": "Micro Print Shirt with Patch Pocket",
+// //         "gender": "male",
+// //         "price": "1668",
+// //         "offer": "2499"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20220629/sFkx/62bc0339aeb26921af4f49b4/-473Wx593H-469234311-green-MODEL.jpg",
+// //         "title": "BRITISH CLUB",
+// //         "desc": "Checked Slim Fit Shirt with Patch Pocket",
+// //         "gender": "male",
+// //         "price": "838",
+// //         "offer": "1999"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20210316/cFR7/604fbf63aeb2696981866bb8/-473Wx593H-460698912-cream-MODEL.jpg",
+// //         "title": "THE INDIAN GARAGE CO",
+// //         "desc": "Checked Slim Fit Shirt with Patch Pocket",
+// //         "gender": "male",
+// //         "price": "612",
+// //         "offer": "1999"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20220119/SuIv/61e83255f997dd66232a5474/-473Wx593H-469034807-mustard-MODEL.jpg",
+// //         "title": "KETCH",
+// //         "desc": "Embroidered Slim Fit Shirt with Patch Pocket",
+// //         "gender": "male",
+// //         "price": "532",
+// //         "offer": "1399"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20220119/SuIv/61e83255f997dd66232a5474/-473Wx593H-469034807-mustard-MODEL.jpg",
+// //         "title": "KETCH",
+// //         "desc": "Embroidered Slim Fit Shirt with Patch Pocket",
+// //         "gender": "male",
+// //         "price": "532",
+// //         "offer": "1399"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20220908/XRfc/631910bbf997dd1f8dec9a54/-473Wx593H-464957923-white-MODEL.jpg",
+// //         "title": "AUSK",
+// //         "desc": "Striped Crew-Neck T-shirt",
+// //         "gender": "male",
+// //         "price": "400",
+// //         "offer": "999"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20210518/gktS/60a3ed67aeb269a9e3c25b98/-473Wx593H-460907297-white-MODEL.jpg",
+// //         "title": "THE INDIAN GARAGE CO",
+// //         "desc": "Checked Slim Fit Shirt with Patch Pocket",
+// //         "gender": "male",
+// //         "price": "525",
+// //         "offer": "1700"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20211123/NY4H/619d0655aeb2690110d305e0/-473Wx593H-469034751-navymulti-MODEL.jpg",
+// //         "title": "KETCH",
+// //         "desc": "Checked Slim Fit Shirt with Patch Pocket",
+// //         "gender": "male",
+// //         "price": "405",
+// //         "offer": "1599"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20220819/xwUR/62fe946daeb2691761846872/-473Wx593H-461150789-cream-MODEL4.jpg",
+// //         "title": "BENE KLEED",
+// //         "desc": "Floral Print Slim Fit Shirt",
+// //         "gender": "male",
+// //         "price": "945",
+// //         "offer": "1500"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20210923/Jd2s/614b77e4aeb269a2689f718e/-473Wx593H-469009785-blue-MODEL.jpg",
+// //         "title": "THE INDIAN GARAGE CO",
+// //         "desc": "Slim Fit Denim Shirt with Patch Pocket",
+// //         "gender": "male",
+// //         "price": "610",
+// //         "offer": "999"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20221220/B8Dk/63a1cff0f997ddfdbde49e3d/-473Wx593H-469412375-green-MODEL.jpg",
+// //         "title": "BROWN BROTHERS",
+// //         "desc": "Leaf Printed Shirt",
+// //         "gender": "male",
+// //         "price": "648",
+// //         "offer": "1200"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20230116/Z86W/63c5644ef997dd708e0946d2/-473Wx593H-463873437-multi-MODEL3.jpg",
+// //         "title": "Floral Print Pants with Top",
+// //         "desc": "Floral Print Pants with Top",
+// //         "gender": "kid",
+// //         "price": "990",
+// //         "offer": "1999"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20230103/yBL0/63b34ee6aeb269659c1f22ae/-473Wx593H-465540787-blue-MODEL.jpg",
+// //         "title": "PSPEACHES",
+// //         "desc": "Floral Print Lehenga Choli with Dupatta Set",
+// //         "gender": "kid",
+// //         "price": "1736",
+// //         "offer": "1999"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20230103/ys4z/63b348b9f997ddfdbd0b5559/-473Wx593H-465541021-blue-MODEL.jpg",
+// //         "title": "PSPEACHES",
+// //         "desc": "Floral Pattern Round-Neck Kurta Set",
+// //         "gender": "kid",
+// //         "price": "1399",
+// //         "offer": "1999"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20221011/HWSF/634486def997ddfdbd1b5974/-473Wx593H-465130679-blue-MODEL.jpg",
+// //         "title": "BITIYA BY BHAMA",
+// //         "desc": "Printed Flared Kurta with Pant",
+// //         "gender": "kid",
+// //         "price": "1400",
+// //         "offer": "1900"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20221008/luye/6340912ff997ddfdbd0f4fcc/-473Wx593H-465117104-blue-MODEL.jpg",
+// //         "title": "BITIYA BY BHAMA",
+// //         "desc": "Floral Print Kurta with Sharara Set",
+// //         "gender": "kid",
+// //         "price": "1500",
+// //         "offer": "2999"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20220921/O2X8/632a289baeb269dbb39918d8/-473Wx593H-465026334-blue-MODEL.jpg",
+// //         "title": "PSPEACHES",
+// //         "desc": "Floral Kurta Suit Set",
+// //         "gender": "kid",
+// //         "price": "1599",
+// //         "offer": "2599"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20220921/vaOn/632a2408aeb269dbb398b5e3/-473Wx593H-465026127-blue-MODEL.jpg",
+// //         "title": "PSPEACHES",
+// //         "desc": "Floral Lehenga Choli with Dupatta Set",
+// //         "gender": "kid",
+// //         "price": "2000",
+// //         "offer": "2999"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20220921/waOd/632a239caeb269dbb398aca0/-473Wx593H-465025888-green-MODEL.jpg",
+// //         "title": "PSPEACHES",
+// //         "desc": "Floral Lehenga Choli with Dupatta Set",
+// //         "gender": "kid",
+// //         "price": "1899",
+// //         "offer": "2999"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20221103/Oxg7/6363d083f997ddfdbd55f972/-473Wx593H-461786977-pink-MODEL.jpg",
+// //         "title": "NAUGHTY NINOS",
+// //         "desc": "Floral Embroidered Jumpsuit with Waist Tie-up",
+// //         "gender": "kid",
+// //         "price": "1500",
+// //         "offer": "3000"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20221206/KWls/638f671eaeb269659cd5ab17/-473Wx593H-464077450-black-MODEL.jpg",
+// //         "title": "NAUGHTY NINOS",
+// //         "desc": "Floral Print Jumpsuit with Tie-Up",
+// //         "gender": "kid",
+// //         "price": "899",
+// //         "offer": "299"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20220521/GGYq/6287fe3ff997dd03e2ff090d/-473Wx593H-464363252-pink-MODEL.jpg",
+// //         "title": "NAUGHTY NINOS",
+// //         "desc": "Striped Jumpsuit with Waist Tie-Up",
+// //         "gender": "kid",
+// //         "price": "985",
+// //         "offer": "1599"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20220627/BxKy/62b9c457aeb26921af4887a9/-473Wx593H-464548267-blue-MODEL.jpg",
+// //         "title": "LILPICKS",
+// //         "desc": "Printed Sleeveless Jumpsuit",
+// //         "gender": "kid",
+// //         "price": "836",
+// //         "offer": "1499"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20220627/3o8V/62b9c3c0f997dd03e29fd19a/-473Wx593H-464548263-black-MODEL.jpg",
+// //         "title": "LILPICKS",
+// //         "desc": "Printed Sleeveless Jumpsuit",
+// //         "gender": "kid",
+// //         "price": "600",
+// //         "offer": "1499"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20220511/2PIj/627b7ff6aeb26921af66a101/-473Wx593H-464078393-pink-MODEL.jpg",
+// //         "title": "STYLOBUG",
+// //         "desc": "Floral Print Jumpsuit with Waist Tie-up",
+// //         "gender": "kid",
+// //         "price": "848",
+// //         "offer": "2495"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20221007/6a93/633f48c8aeb269659c282d37/-473Wx593H-465108272-pink-MODEL.jpg",
+// //         "title": "R K MANIYAR",
+// //         "desc": "Floral Print Ruffled Jumpsuit",
+// //         "gender": "kid",
+// //         "price": "1660",
+// //         "offer": "1499"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20220823/TR7Z/6303e54ff997dd394c10a443/-473Wx593H-464856205-pink-MODEL.jpg",
+// //         "title": "R K MANIYAR",
+// //         "desc": "Graphic Printed Regular Fit Jumpsuit",
+// //         "gender": "kid",
+// //         "price": "417",
+// //         "offer": "1800"
+// //     },
+// //     {
+// //         "avatar": "https://assets.ajio.com/medias/sys_master/root/20220810/dTrm/62f359e1aeb26921afda639b/-473Wx593H-464192671-burgundy-MODEL.jpg",
+// //         "title": "PINK CHICK",
+// //         "desc": "Embellished Fit & Flare Dress",
+// //         "gender": "kid",
+// //         "price": "2300",
+// //         "offer": "3999"
+// //     }
+// // ]
+        
+
+//         // localStorage.setItem("Ecommerse_Products",JSON.stringify(productsApi));
+
+//     addProductForm.addEventListener("submit",function(event){
+//         event.preventDefault();
+
+//         let prodcutImage = addProductForm.prodcutImage.value;
+//         addProductForm.prodcutImage.innerText = "";
+
+//         let productName = addProductForm.productName.value;
+//         let productDescription = addProductForm.productDescription.value;
+//         let gender = addProductForm.gender.value;
+//         let productPrice = addProductForm.productPrice.value;
+//         let offerPrice = addProductForm.offerPrice.value;
+
+        // let GiftingCardsImages = JSON.parse(localStorage.getItem("GiftingCardsImages")) ||  [];
+
+        // let product = {
+        //     avatar : prodcutImage
+        // }
+
+        // GiftingCardsImages.push(product);
+        // localStorage.setItem("GiftingCardsImages",JSON.stringify(GiftingCardsImages));
+
+//     });}
+
+    let dealsOfTheDayImageList = [
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/49939a83-5bf1-4c78-b55d-40d7545f843e1660744474034-Kurtas--4-.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/d5f885c5-4a54-4634-81da-6333aa51c1a11660744537981-Dresses--13-.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/ca8aa842-a6ed-4c53-b85a-5d7551a650121660744817501-Work-Ready-Shoes--1-.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/04672f44-d01c-4f5a-b005-8e01c00582261660744864260-Casual-Shoes---Flip-Flops--4-.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/9e19d40a-6720-4d62-92e0-32cd1ee6bee91660744897243-Flats---Heels--3-.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/0e56c483-33e8-4ea5-bae0-96020b7b31401660744930158-Dinnerware---Kitchenware.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/ffa236ca-da08-4fb8-bec3-9b4950c943851660745008808-KAMA.jpg"
+    }
+]
+  
+    let dealImagesDiv = document.querySelector("#deals_of_the_day");
+    dealsOfTheDayImageList.forEach(element => {
+
+      let dealImgTag = document.createElement("img");
+      dealImgTag.setAttribute("src",element.avatar);
+
+      dealImagesDiv.append(dealImgTag);
+
+    });
+
+    let bestOfBrandsList = [
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/retaillabs/2022/3/10/b25f89eb-fbeb-4013-829e-32ee5b5daaa01646895183668-Roadster-HRX_Unisex.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/bfa5c871-a5a5-4d81-b46e-18aedccfdc9b1644407437913-Kurta_sets-_Anouk-_AAY_-_more.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/046147d1-1874-4c10-adb9-6dbd88b606e71644407437923-Kurtas-_Anouk-_Sangria_-_more.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/76acf345-fc62-4b49-8b2c-9c0fc9c925311644407437977-Tops_-_Dressberry-_AAY_-_more.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/eb70855e-98c4-412d-bf20-50804546d57e1644407437883-Dresses_-_Dressberry-_Chemistry_-_more.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/eff5a33f-ea24-4e70-84e5-ec4d25ee5c7b1644407437968-Roadster_and_KnK_Tshirts.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/667a71f0-c24b-4a00-a98c-cc6a54a815e91644407437985-Tshirts_-_Roadster-_KnK_-_more.jpg"
+    }
+]
+    
+
+    let best_of_brands = document.querySelector("#best_of_brands");
+    bestOfBrandsList.forEach(element => {
+
+      let bestImgTag = document.createElement("img");
+      bestImgTag.setAttribute("src",element.avatar);
+
+      best_of_brands.append(bestImgTag);
+
+    });
+
+
+    
+    let dealsoftopbrands = [
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/retaillabs/2020/9/3/f0dc0024-a8d3-4aec-9e1b-d9b6873b52d51599144996663-Crocs.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/85d5e2e1-fa21-43b0-a352-438e15f1006e1598892141455-Nike.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/retaillabs/2020/9/26/adc58a2c-fa18-4b94-b2d6-4c692a44123d1601115417606-unnamed--6-.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/8238147e-a86e-4fe4-a830-ab5c2c49beba1598892141840-W.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/retaillabs/2020/9/1/7d0153c1-2fc4-49ec-ac7c-3c402d1ed45f1598948396008-USPA.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/26/d1fab403-7742-4a91-a781-2e36bea65a8a1598445950683-Men-s-Apparel---Roadster.png"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/ee953e28-7ca8-4e08-a6a9-c51c98f823411598892141010-BIBA.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/retaillabs/2020/9/4/e6c7a718-acc0-4aa6-b04c-470ab139d66c1599230080722-F21--4-.jpg"
+    }
+]
+    let deals_of_top_brands = document.querySelector("#deals_of_brands");
+    dealsoftopbrands.forEach(element => {
+
+      let dealsTopBrands = document.createElement("img");
+      dealsTopBrands.setAttribute("src",element.avatar);
+
+      deals_of_top_brands.append(dealsTopBrands);
+
+    });
+    
+    let slashedPricesList = [
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/8/e96d85b8-7a62-4f57-898a-6c291ffb4d7f1644339048429-HRX_HP.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/10/40ddc119-a9bd-4117-ad8b-fc5bcc6a09141644475927190-ether.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/10/3cbf365e-8027-4aed-859b-6d40886418d21644475927244-Anouk--1-.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/10/af85f560-cd67-469a-8405-4ec64a33f9971644475927251-Dressberry.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/10/40ddc119-a9bd-4117-ad8b-fc5bcc6a09141644475927190-ether.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/10/fdbf3336-1777-46fd-aff6-7786268bc0d71644475927169-Harvard.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/10/8cd7ec33-78fe-4b40-802d-365238b1376e1644475927229-Sangria.jpg"
+    }
+]
+    let slashed_prices = document.querySelector("#slashed_prices");
+    slashedPricesList.forEach(element => {
+
+      let dealsTopBrands = document.createElement("img");
+      dealsTopBrands.setAttribute("src",element.avatar);
+
+      slashed_prices.append(dealsTopBrands);
+    });
+
+
+    let giftinCards = [{
+        "avatar": "https://assets.myntassets.com/f_webp,w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/22/22b3c59a-fa16-434d-b2e1-d8779f1abe871661164884892-Gift-Card-Banner.png"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2021/11/12/ef1e7c6b-bec4-471c-9c36-72fffd975c0c1636738225251-happy-wedding.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2021/11/12/72f3fe20-f0a5-4894-852c-817b40b285291636738225244-happy-birthday.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2021/11/12/934a734c-ebb4-48c4-96d0-018e1e5eb7e21636738225215-milestones.jpg"
+    }
+]
+
+    let gifting_cards = document.querySelector("#gifting_cards");
+    giftinCards.forEach(element => {
+
+      let dealsTopBrands = document.createElement("img");
+      dealsTopBrands.setAttribute("src",element.avatar);
+
+      gifting_cards.append(dealsTopBrands);
+
+    });
+
+    
+    let closoreOfTheSeason = [{
+        "avatar": "https://assets.myntassets.com/f_webp,w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/17/53a0e7bc-64e7-4fb3-94fd-a1ada51fbefa1647516450800-SS22-Colours-Metallic-Hues.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/17/a6ef0785-eb3c-4726-a6ba-c09f6a44379c1647516450782-SS22-Colours-Elegant-Olive.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/26/3b1d43f4-46bf-4e3f-903b-ec5ca5c2bac91645860983331-SS22-Colours-Mens-BreezyWhite.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/17/96018800-d6b6-47e1-9998-62de5ce5c16a1647516450837-SS22-Colours-Soft-Pastels.jpg"
+    },
+    {
+        "avatar": "https://assets.myntassets.com/f_webp,w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/17/389fe98d-b379-4816-9411-63624b03c0671647516450765-SS22-Colours-Electric-Lime.jpg"
+    }
+]
+
+    let closure_fo_the_season = document.querySelector("#closure_fo_the_season");
+    closoreOfTheSeason.forEach(element => {
+
+      let dealsTopBrands = document.createElement("img");
+      dealsTopBrands.setAttribute("src",element.avatar);
+
+      closure_fo_the_season.append(dealsTopBrands);
+
+    });
+
+</script>

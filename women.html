@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz@8..60&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+</head>
+<body>
+    <div id="nav">
+        <div><a href="index.html"><img id="shopifyLogo" src="logo.png" alt=""></a></a></div>
+        <div>
+            <a href="mens.html">MEN</a>
+            <a href="women.html">WOMEN</a>
+            <a href="kid.html">KIDS</a>
+            <a href="cart.html">CART</a>
+            <a href="signup.html">SIGNUP</a>
+            <a href="login.html">LOGIN</a>
+        </div>
+    </div>
+
+    <div id="slider" style="margin-top:5.5%; position: relative;">
+        
+        <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }' id="upside">
+            <div class="carousel-cell">
+              <img class="w3-image" src="https://assets.ajio.com/cms/AJIO/WEB/15022023-WHP-D-mainbanner-p2-puma-fila-flat60.jpg">
+            </div>
+            <div class="carousel-cell">
+              <img class="w3-image" src="https://assets.ajio.com/cms/AJIO/WEB/15022023-WHP-D-mainbanner-p3-veromoda-alsacelorraineparis-flat55-extra30.jpg">
+            </div>
+            <div class="carousel-cell">
+              <img class="w3-image" src="https://assets.ajio.com/cms/AJIO/WEB/15022023-WHP-D-mainbanner-p7-truebrowns-styli-upto50.jpg">
+            </div>
+    
+            <div class="carousel-cell">
+                <img class="w3-image" src="https://assets.ajio.com/cms/AJIO/WEB/15022023-WHP-D-dailybanner-p5-ishin-aks-min60-extraupto25.jpg">
+              </div>
+    
+              <div class="carousel-cell">
+                <img class="w3-image" src="https://assets.ajio.com/cms/AJIO/WEB/15022023-WHP-D-dailybanner-p3-anubhutee-divyank-min60-extraupto30.jpg">
+              </div>
+              <div class="carousel-cell">
+                <img class="w3-image" src="https://assets.ajio.com/cms/AJIO/WEB/15022023-WHP-D-topbanner-p1-fig-rio-30to60.jpg">
+              </div>
+          </div>
+        </div>
+
+    <div id="filteresDiv">
+
+        <select id="selectCategory" style="margin-left: 7%">
+            <option value="All">All Categories</option>
+            <option value="Floral">Floral</option>
+            <option value="Dupatta">Dupatta</option>
+            <option value="Saree">Saree</option>
+        </select>
+
+    
+    <select name="" id="sortBy">
+        <option value="none">Sort By</option>
+        <option value="LowToHigh">Low To High</option>
+        <option value="HighToLow">High To Low</option>
+    </select>
+
+    <input type="text" id="searhBar" placeholder="Search Products">
+    </div>
+
+    <div id="serch_bar_not_found_result">
+    </div>
+
+    <div id="popupContent">
+            <div id="onclickContent"></div>
+        </div>
+
+    <div id="productsContainer"></div>
+
+    <div id="footer" style="margin-top: 10%;">
+        
+        <div>
+            <div><img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Free-shipping.svg" alt=""></div>
+            <div>
+                <p>FREE SHIPPING</p>
+                <hr>
+                <p>On Orders Above</p>
+                <p>₹299</p>
+            </div>
+        </div>
+
+        <div>
+            <div><img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/return_accepted.svg" alt=""></div>
+            <div>
+                <p>EASY RETURNS</p>
+                <hr>
+                <p>15-Day Return Policy</p>
+            </div>
+        </div>
+        
+        <div>
+            <div><img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Authenticity.svg" alt=""></div>
+            <div>
+                <p>100%</p>
+                <p>AUTHENTIC</p>
+                <hr>
+                <p>Products Sourced Directly</p>
+            </div>
+        </div>
+
+        <div>
+            <div><img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Brands.svg" alt=""></div>
+            <div>
+                <p>100%</p>
+                <p>1900+ BRANDS</p>
+                <hr>
+                <p>1.2 Lakh+ Products</p>
+            </div>
+        </div>
+
+        <div>
+            <div><p>Show us some love ❤ on social media</p></div>
+            <hr>
+            <div>
+               <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-instagram-filled.svg" alt="">
+               <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-facebook-filled.svg" alt="">
+               <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-youtube-filled.svg" alt="">
+               <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-twitter-filled.svg" alt="">
+               <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-pinterest-filled.svg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<script>
+
+    let loggedDetails = {
+            userName : localStorage.getItem("loggedUserEmail"),
+            password : localStorage.getItem("loggedUserPassword")
+         };
+         
+         if(loggedDetails.userName !=null && loggedDetails.password != null){
+            document.querySelector("#nav>div:nth-child(2)").innerHTML = 
+            ` <a href="mens.html">MEN</a>
+                <a href="women.html">WOMEN</a>
+                <a href="kid.html">KIDS</a>
+                <a href="cart.html">CART</a>
+                <a href="logout.html">LOGOUT</a>`;
+        }
+    
+        let productsContainer = document.querySelector("#productsContainer");
+    
+        let products = JSON.parse(localStorage.getItem("Ecommerse_Products")) || [];
+    
+        let cartProducts =JSON.parse(localStorage.getItem("Cart_Products")) || [];
+        
+        let filterSelect = document.querySelector("#selectCategory");
+    
+        let filteredProdcuctsList = [];
+    
+        filterSelect.addEventListener("change",function(){
+            filterFunction(products,filterSelect.value);
+        });
+
+        filterFunction(products,filterSelect.value);
+    
+        function filterFunction(products,category){
+
+            productsContainer.innerHTML=null;
+    
+             filteredProdcuctsList = [];
+    
+            products.forEach(function(element,index){
+    
+                let checkingAvailability = element.desc.trim().split(" ").indexOf(category);
+    
+                if(category == "All"){
+                    filteredProdcuctsList.push(element);
+                }else if(checkingAvailability >= 0){
+                    filteredProdcuctsList.push(element);
+                    console.log(filteredProdcuctsList)
+                }
+        });
+
+        document.getElementById("sortBy").selectedIndex = 0;
+
+        displayProducts(filteredProdcuctsList);
+
+    }
+        // ----- appending filterd products---------
+    
+        displayProducts(filteredProdcuctsList);
+        
+        function displayProducts(filteredProdcucts,category){
+            productsContainer.innerHTML=null;
+    
+            filteredProdcucts.forEach(function(element,index){
+    
+                if(element.gender == "female"){
+                let box = document.createElement("div");  
+                box.addEventListener("click",function(){
+                    quickView(element);
+                })  
+    
+                let imgDiv = document.createElement("img");
+                imgDiv.setAttribute("src",element.avatar);
+                
+                let detailsDiv = document.createElement("div");
+    
+                let title = document.createElement("h3");
+                title.innerText = element.title;
+    
+                let desc = document.createElement("p");
+                desc.innerText= element.desc;
+    
+                detailsDiv.append(title,desc);
+    
+                let priceDiv = document.createElement("h4");
+                let sellPrice = "₹" + element.price;
+                priceDiv.innerText = sellPrice;
+    
+                let off = document.createElement("p");
+                let mrp= "MRP Rs." + element.offer;
+                off.innerText = mrp;
+    
+                let priceOff = document.createElement("div");
+                priceOff.append(priceDiv,off);
+    
+                let cartButton = document.createElement("button");
+                cartButton.innerText = "Add To Cart";
+    
+                cartButton.addEventListener("click",function(){
+                    addToCart(element);
+                });
+    
+                box.append(imgDiv,detailsDiv,priceOff,cartButton);
+    
+                productsContainer.append(box);
+                }
+            });
+        }
+
+        // -------------   Quick View ------------
+
+        let onclickContent = document.querySelector("#onclickContent");
+
+        function quickView(element){
+            if(event.target.innerHTML != "Add To Cart"){
+            popupContent.style.display="block";
+            console.log(element);
+            console.log(this);
+            onclickContent.innerHTML = "";
+            let box = document.createElement("div");    
+             
+
+                let imgDiv = document.createElement("img");
+                imgDiv.setAttribute("src",element.avatar);
+
+                let onClickContentFirstDiv = document.createElement("div");
+                onClickContentFirstDiv.append(imgDiv);
+                
+                let detailsDiv = document.createElement("div");
+    
+                let title = document.createElement("h3");
+                title.innerText = element.title;
+    
+                let desc = document.createElement("p");
+                desc.innerText= element.desc;
+    
+                detailsDiv.append(title,desc);
+    
+                let priceDiv = document.createElement("h4");
+                let sellPrice = "₹" + element.price;
+                priceDiv.innerText = sellPrice;
+    
+                let off = document.createElement("p");
+                let mrp= "MRP Rs." + element.offer;
+                off.innerText = mrp;
+    
+                let priceOff = document.createElement("div");
+                priceOff.append(priceDiv,off);
+    
+                let cartButton = document.createElement("button");
+                cartButton.innerText = "Add To Cart";
+                let onClickContentSecondtDiv= document.createElement("div");
+
+                onClickContentSecondtDiv.append(detailsDiv,priceOff,cartButton);
+
+                cartButton.addEventListener("click",function(){
+                    addToCart(element);
+                });
+    
+                box.append(onClickContentFirstDiv,onClickContentSecondtDiv);
+    
+                onclickContent.append(box);}
+        }
+
+       let popupContent = document.querySelector("#popupContent")
+
+        window.onclick = function(event) {
+            if (event.target == popupContent ) {
+                popupContent.style.display="none";
+            }
+        }
+
+        
+     // ---------------- Sort By--------------
+
+     let sortBy = document.querySelector("#sortBy");
+     sortBy.addEventListener("change", function(){
+        sortProductByPrice(sortBy.value);
+    });
+
+    function sortProductByPrice(val){
+
+if(val=="LowToHigh"){
+filteredProdcuctsList.sort(function(a, b){return a.price - b.price});
+}else if(val=="HighToLow"){
+filteredProdcuctsList.sort(function(a, b){return b.price - a.price});
+}
+
+displayProducts(filteredProdcuctsList);
+
+};
+     
+        // -------- Serch Bar ---------->>>>
+
+        const searchBar = document.querySelector('#searhBar');
+
+        searchBar.addEventListener("keypress",function(event){
+            if(event.key == "Enter"){
+                filteredProdcuctsList = [];
+
+                let searchBarValue = searchBar.value; 
+                if( searchBarValue!=""){
+
+                products.forEach(function(element){
+                    let productDescWords = element.desc.trim().split(" ");
+                    // making elements as lowercase
+
+                    for(let i =0;i<productDescWords.length;i++){
+                        productDescWords[i]= productDescWords[i].toLowerCase();
+                    }
+
+                    let searchBarWords = searchBarValue.trim().split(" ");
+                    
+                    for(let a = 0;a<searchBarWords.length;a++){
+                      let found =  productDescWords.indexOf(searchBarWords[a].toLowerCase());
+
+                        if( found>=0){
+                            let validToPush = true;
+                            for(let n=0;n<filteredProdcuctsList.length;n++){
+                              if(filteredProdcuctsList[n].avatar == element.avatar){
+                                validToPush = false;
+                                break;
+
+                              }
+                            }
+
+                            if(validToPush){
+                              
+                                    filteredProdcuctsList.push(element);
+                                
+                            }
+                        }
+                    }
+
+                    displayProducts(filteredProdcuctsList);
+
+                    document.querySelector('#serch_bar_not_found_result').innerHTML= null;
+                    if(filteredProdcuctsList.length==0){
+                         document.querySelector('#serch_bar_not_found_result').innerHTML=
+                         `<h3>Sorry! We couldn't find any matching items for :
+                           <b>${searchBarValue}</b>
+                           </h3> 
+                           <hr>
+                           <p>Don't give up - check the spelling, or try less specific search terms.</p>
+                         `;
+
+                         displayProducts(products);
+                    }
+
+                });
+            }else{
+                displayProducts(products);
+            }
+        }
+
+        });   
+
+    
+        function addToCart(element,index){
+            
+            let added = true;
+            cartProducts.forEach(function(el){
+                if(el.avatar == element.avatar){
+                    alert("Product already added to cart.");
+                    added= false;
+                }
+            });
+    
+            if(added){
+                cartProducts.push(element);
+                 alert("Product added to cart.")
+                 localStorage.setItem("Cart_Products",JSON.stringify(cartProducts));
+            }
+            popupContent.style.display="none";
+
+        }
+      
+    
+    
+    </script>
+    

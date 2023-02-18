@@ -1,0 +1,612 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Source Serif 4', serif;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#nav{
+    display: grid;
+    grid-template-columns: 30% 40%;
+    margin: auto;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    word-spacing: 1.5px;
+    box-shadow: -5px -5px 12px 5px rgb(162, 210, 239);
+    position: fixed;
+    z-index: 1;
+    backface-visibility: visible;
+    background-color: aliceblue;
+    top: 0px;
+}
+
+
+#nav a{
+    text-decoration: none;
+    color: black;
+    padding: 3%;
+
+}
+
+#nav>div:first-child {
+    text-decoration: none;
+    color: black;
+    width: 40%;
+}
+
+#shopifyLogo{
+    width: 100%;
+}
+
+#nav>div:nth-child(1){
+    display: flex;
+    padding: .5%;
+}
+
+#nav>div:nth-child(2){   
+     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5%;
+}
+
+#slider{
+    position: relative;
+    top: 0px;
+    margin-top:7%;
+    padding-bottom: -10%;
+}
+
+
+
+/* ---------------- signup form ------------------ */
+
+#signupForm{
+    display:  flex;
+    flex-direction: column;
+    width: 25%;
+    margin: auto;
+    margin-top: 1%;
+    padding: 1%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(175, 175, 239);
+}
+
+#signupForm>input{
+    padding: 1%;
+    border: none;
+    border-bottom: 1px solid green;
+    margin-top: -1%;
+}
+
+#signupForm label{
+    padding: 1%;
+    border: none;
+    margin-top: 2%
+}
+
+#signupForm>input:last-child{
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 10px ;
+    background-color: rgb(198, 243, 243);
+}
+
+#signupForm input:last-child:hover{
+    background-color: aqua;
+}
+#signupForm p{
+    font-size: 14px;
+    color: red;
+}
+
+#redirect_to_login{
+    margin: auto;
+    text-align: center;
+    margin-top: .6%;
+    margin-bottom: 2%;
+}
+
+#redirect_to_signup{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2%;
+    padding: .2%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    align-items: center;   
+    width: 90%
+}
+
+#new_to_ecommerse{
+    width: 27%;
+    margin: auto;
+    margin-top: .6%;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    justify-content: center;
+}
+
+#new_to_ecommerse a{
+    padding: 1%;
+    margin-top: 1%;
+    width: 90%;
+    border-color: brown;
+    border-radius:7px ;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    background-color: rgb(249, 248, 175);
+    text-align: center;
+}
+
+#new_to_ecommerse a:hover{
+    background-color: rgb(154, 222, 245);
+}
+
+/* ----------- filters -------------- */
+
+#selectCategory{
+
+    margin-top: 2.3%;
+    padding: .5% 5% .5% 0%;
+    border-color: teal;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid green;
+    background-color: azure;
+}
+
+#sortBy{
+    padding: .5% 5% .5% 0%;
+    border-color: teal;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid green;
+    background-color: azure;
+}
+
+#searhBar{
+    padding: .6% 5% .6% 0%;
+    border: 2px solid green;
+    background-color: azure;
+    border-radius: 30px;
+    padding-left: 3%;
+    width: 30%;
+    margin-left: 30%;
+}
+
+#serch_bar_not_found_result{
+    margin: auto;
+    width: 80%;
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#serch_bar_not_found_result>p{
+    color: green;
+}
+
+#serch_bar_not_found_result hr{
+    border: 1px solid rgba(54, 225, 91, 0.43);
+    width: 25%;
+}
+
+/* -------------products container------------ */
+
+#productsContainer{
+    width: 90%;
+    margin: auto;
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    gap: 2%;
+    align-items: center;
+}
+
+#productsContainer>div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius:15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+
+#productsContainer>div>div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#productsContainer>div>div:nth-child(2)>h3{
+    color: burlywood;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#productsContainer>div>div:nth-child(2)>p{
+    font-size: 13px;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    margin-top: -1%;
+}
+
+#productsContainer img{
+    width: 100%;
+    border-radius: 7%;
+    border-radius:15px;
+    
+}
+#productsContainer>div>div:nth-child(3){
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+#productsContainer>div>div:nth-child(3) p{
+    margin-bottom: 5%;
+    text-decoration: line-through;
+    color:  red;
+    font-size: 12px;
+}
+
+#productsContainer button{
+    margin-bottom: 3%;
+    padding: 2% 5%;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(170, 245, 245);
+
+}
+
+#productsContainer button:hover{
+    background-color: rgb(200, 241, 139);
+}
+/* -------------footer----------- */
+
+#footer{
+    display: grid;
+    grid-template-columns: 12% 12% 12% 10% 20%;
+    gap: 3%;
+    margin-top: 5%;
+    justify-content:  center;
+    width: 100%;
+    height:150px;
+    align-items: center;
+    background-color: rgb(237, 198, 100);
+}
+
+#footer>div{
+    display: flex;
+    align-items: center;
+    padding: 3%;
+    flex-direction: row;
+    height: 70px;
+
+}
+
+#footer img{
+    width: 80%;
+    margin-right: 3%;
+}
+
+#footer>div:last-child{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-grow: 0;
+}
+
+#footer>div:last-child>div:last-child{
+    display: flex;
+    align-items: center;
+    padding: 3%;
+}
+
+#footer hr{
+    margin-top: -1%;
+    margin-bottom: -1%;
+}
+
+#footer>div:last-child>hr {
+    width: 100%;
+    margin-top: 1%;
+}
+
+
+@media all and (min-width: 330px) and (max-width: 449px){
+
+
+    
+    #nav{
+        font-size: 12px;
+    }
+    
+    
+    #nav a{
+        padding: 4%;
+    }
+    
+    /* ---------------- signup form ------------------ */
+    
+    #signupForm{
+        width: 60%;
+    }
+    
+    #signupForm>input{
+        padding: 1%;
+        border: none;
+        border-bottom: 1px solid green;
+        margin-top: -1%;
+    }
+    
+    /* ----------- filters -------------- */
+    
+    #selectCategory{
+        margin-top: 5%;
+    }
+    
+    
+    /* -------------products container------------ */
+    
+    #productsContainer{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    #productsContainer>div>div:nth-child(2)>p{
+        font-size: 10px;
+    }
+    
+        #footer{
+            display: grid;
+            grid-template-columns: 12% 12% 12% 10% 20%;
+            gap: 1%;
+            margin-top: 25%;
+            justify-content:  center;
+            width: 100%;
+            height:150px;
+        
+        }
+        
+        #footer>div{
+            display: flex;
+            align-items: center;
+            padding: 3%;
+            flex-direction: row;
+            height: 70px;
+            font-size: 10px;
+        }
+        
+    }
+    
+
+
+/* --------400px to 700px ------------ */
+
+@media all and (min-width: 450px) and (max-width: 700px){
+
+
+    
+#nav{
+    font-size: 12px;
+}
+
+
+#nav a{
+    padding: 1%;
+}
+
+/* ---------------- signup form ------------------ */
+
+#signupForm{
+    width: 60%;
+}
+
+#signupForm>input{
+    padding: 1%;
+    border: none;
+    border-bottom: 1px solid green;
+    margin-top: -1%;
+}
+
+/* ----------- filters -------------- */
+
+#selectCategory{
+    margin-top: 5%;
+}
+
+
+/* -------------products container------------ */
+
+#productsContainer{
+    grid-template-columns: repeat(3,1fr);
+}
+
+#productsContainer>div>div:nth-child(2)>p{
+    font-size: 10px;
+}
+
+    #footer{
+        display: grid;
+        grid-template-columns: 12% 12% 12% 10% 20%;
+        gap: 3%;
+        margin-top: 25%;
+        justify-content:  center;
+        width: 100%;
+        height:150px;
+        align-items: center;
+        background-color: rgb(237, 198, 100);
+    }
+    
+    #footer>div{
+        display: flex;
+        align-items: center;
+        padding: 3%;
+        flex-direction: row;
+        height: 70px;
+        font-size: 10px;
+    }
+    
+}
+
+
+
+@media all and (min-width: 701px) and (max-width: 1200px){
+    
+    #nav{
+        font-size: 14px;
+    }
+    
+    #nav a{
+        padding: 1%;
+    }
+    
+    /* ---------------- signup form ------------------ */
+    
+    #signupForm{
+        width: 60%;
+    }
+
+    #signupForm>input{
+        padding: 1%;
+        border: none;
+        border-bottom: 1px solid green;
+        margin-top: -1%;
+    }
+
+    /* ----------- filters -------------- */
+
+    #selectCategory{
+        margin-top: 5%;
+    }
+
+    /* -------------products container------------ */
+    
+    #productsContainer{
+        grid-template-columns: repeat(4,1fr);
+    }
+    
+    #productsContainer>div>div:nth-child(2)>p{
+        font-size: 10px;
+    }
+    
+        #footer{
+            display: grid;
+            grid-template-columns: 12% 12% 12% 10% 20%;
+            gap: 3%;
+            margin-top: 25%;
+            justify-content:  center;
+            width: 100%;
+            height:150px;
+            align-items: center;
+            background-color: rgb(237, 198, 100);
+        }
+        
+        #footer>div{
+            display: flex;
+            align-items: center;
+            padding: 3%;
+            flex-direction: row;
+            height: 70px;
+            font-size: 14px;
+        }
+        
+    }
+    /* ---------popupcontent---- */
+
+    #popupContent{
+        display: none;
+        position: fixed; 
+        z-index: 1; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%;
+        background-color: rgba(243, 243, 243, 0.214); 
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #onclickContent{
+        width: 35%;
+        display:  flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 7%;
+    }
+    
+    #onclickContent>div{
+        width:100%;
+        height: 35%;   
+        display:  flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        background-color: rgb(222, 227, 223);
+        box-shadow: -5px -5px 10px 2px rgb(167, 170, 156), 5px 5px 10px 2px rgb(226, 228, 209);
+        border-radius: 25px;
+
+    }
+
+
+    #onclickContent>div>div{
+        width: 100%;
+    }
+    
+
+    #onclickContent>div>div:nth-child(2)>div:first-child>h3{
+        font-size: 25px;
+        font-weight: 900;
+    }
+
+    #onclickContent>div>div:nth-child(2)>div:nth-child(2)>p{
+        font-size: 14px;
+        color: red;
+        text-decoration: line-through;
+        font-style: italic;
+    }
+
+    #onclickContent>div button{
+        margin-top: 2%;
+        padding: 2% 7%;
+        border: none;
+        color: rgb(0, 0, 0);
+        background-color: rgb(208, 218, 215);
+        font-weight: 700;
+        border-radius: 25px;
+
+
+    }
+
+    #onclickContent>div button:hover{
+        background-color: rgb(29, 180, 226);
+
+    }
+    #onclickContent img{
+        width: 90%;
+        margin: auto;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+    

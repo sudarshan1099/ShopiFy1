@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz@8..60&display=swap" rel="stylesheet"></head>
+<body>
+
+    <h1 style="margin: auto; margin-top: 2%; text-align: center; width: 15%;"><a href="index.html"><img style="width: 100%;" id="shopifyLogo" src="logo.png" alt=""></a></h1>
+     
+    <form id="signupForm">
+        <h2>Sign in</h2>
+
+        <label for="">your Email</label>
+        <input type="email" placeholder="Email" id="email">
+        <p id="nameError"></p>
+
+        <label for="">Password</label>
+        <input type="text" placeholder="Password" id="password">
+        <P id="passwordError"></P>
+
+        <input type="submit" name="" value="Login" >
+    </form>
+
+    <div id="new_to_ecommerse">
+        <div id="redirect_to_signup">
+             <hr id="new_to_ecommerse_1">
+             <p>New to E-commerse?</p>
+             <hr  id="new_to_ecommerse_1">
+        </div>
+        <a href="signup.html">Signup</a>
+    </div>
+
+</body>
+</html>
+<script>
+
+    let loginForm = document.querySelector("#signupForm");
+    
+    loginForm.addEventListener("submit",function(event){
+        event.preventDefault();
+
+        let email = loginForm.email.value;
+        let password = loginForm.password.value;
+
+        if(email == ""){
+            document.querySelector("#nameError").innerText = "! Enter email.";
+        }else{
+            document.querySelector("#nameError").innerText = "";
+        }
+
+        if(password == ""){
+            document.querySelector("#passwordError").innerText = "! Enter password.";
+        }else{
+            document.querySelector("#passwordError").innerText = "";
+        }
+
+        if(email != "" && password != ""){
+
+            let userSignupDetails = JSON.parse(localStorage.getItem("userSignupDetails")) || [];
+
+            notExists = true;
+            for(let i = 0;i < userSignupDetails.length;i++){
+                let element = userSignupDetails[i];
+                if(element.email == email && element.password == password){
+                    console.log(email);
+                    localStorage.setItem("loggedUserEmail", email);
+                    localStorage.setItem("loggedUserPassword",password);
+                    window.location.href = "index.html";
+                    notExists=false;
+                    break;
+                }
+            }
+
+            if(notExists){
+                alert("User not registered. Please Signup.")
+            }
+        }
+
+    })
+      
+
+    
+</script>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide show form</title>
+</head>
+<body>
+    
+    <form id="slide_show_images">
+        <input type="text" name="" id="slide_image_input" placeholder="Image url">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+<script>
+
+    let indexSlideShowList = JSON.parse(localStorage.getItem("index_slide_show_images")) || [];
+    
+    const imageForm = document.querySelector('#slide_show_images')
+    imageForm.addEventListener("submit",function(){
+        event.preventDefault();
+    let image = imageForm.slide_image_input.value;
+    imageForm.slide_image_input.value=null;
+    console.log(image);
+
+    indexSlideShowList.push(image);
+    localStorage.setItem("index_slide_show_images",JSON.stringify(indexSlideShowList));
+
+    });
+    
+
+    
+
+    
+</script>
