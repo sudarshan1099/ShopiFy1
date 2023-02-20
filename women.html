@@ -62,7 +62,6 @@
             <option value="Dupatta">Dupatta</option>
             <option value="Saree">Saree</option>
         </select>
-
     
     <select name="" id="sortBy">
         <option value="none">Sort By</option>
@@ -70,7 +69,10 @@
         <option value="HighToLow">High To Low</option>
     </select>
 
-    <input type="text" id="searhBar" placeholder="Search Products">
+    <input type="text" id="searhBar" placeholder="Search Products onclick">
+
+    <input oninput="debouncingSerch()" type="text" id="debouncingSerchBar" placeholder="Search Products on-input">
+
     </div>
 
     <div id="serch_bar_not_found_result">
@@ -142,6 +144,7 @@
 
 <script>
 
+
     let loggedDetails = {
             userName : localStorage.getItem("loggedUserEmail"),
             password : localStorage.getItem("loggedUserPassword")
@@ -155,6 +158,8 @@
                 <a href="cart.html">CART</a>
                 <a href="logout.html">LOGOUT</a>`;
         }
+
+        let onInputTimeInterval;
     
         let productsContainer = document.querySelector("#productsContainer");
     
@@ -166,6 +171,7 @@
     
         let filteredProdcuctsList = [];
     
+
         filterSelect.addEventListener("change",function(){
             filterFunction(products,filterSelect.value);
         });
@@ -186,7 +192,6 @@
                     filteredProdcuctsList.push(element);
                 }else if(checkingAvailability >= 0){
                     filteredProdcuctsList.push(element);
-                    console.log(filteredProdcuctsList)
                 }
         });
 
@@ -195,6 +200,8 @@
         displayProducts(filteredProdcuctsList);
 
     }
+
+
         // ----- appending filterd products---------
     
         displayProducts(filteredProdcuctsList);
@@ -244,22 +251,20 @@
                 box.append(imgDiv,detailsDiv,priceOff,cartButton);
     
                 productsContainer.append(box);
+
                 }
             });
         }
 
-        // -------------   Quick View ------------
+        // ------------- Quick View ------------ //
 
         let onclickContent = document.querySelector("#onclickContent");
 
         function quickView(element){
             if(event.target.innerHTML != "Add To Cart"){
             popupContent.style.display="block";
-            console.log(element);
-            console.log(this);
             onclickContent.innerHTML = "";
             let box = document.createElement("div");    
-             
 
                 let imgDiv = document.createElement("img");
                 imgDiv.setAttribute("src",element.avatar);
@@ -340,10 +345,16 @@ displayProducts(filteredProdcuctsList);
                 filteredProdcuctsList = [];
 
                 let searchBarValue = searchBar.value; 
+                searchBar.value="";
+
                 if( searchBarValue!=""){
 
                 products.forEach(function(element){
-                    let productDescWords = element.desc.trim().split(" ");
+                    let productDescWords1 = element.title.trim().split(" ");
+                    let productDescWords2 = element.desc.trim().split(" ");
+
+                    let productDescWords = productDescWords1.concat(productDescWords2);
+
                     // making elements as lowercase
 
                     for(let i =0;i<productDescWords.length;i++){
@@ -366,9 +377,9 @@ displayProducts(filteredProdcuctsList);
                             }
 
                             if(validToPush){
-                              
+                                  if(element.gender == "female"){
                                     filteredProdcuctsList.push(element);
-                                
+                                  }
                             }
                         }
                     }
@@ -395,6 +406,74 @@ displayProducts(filteredProdcuctsList);
         }
 
         });   
+
+
+         // --------------- search on-input--------
+
+         function selectOnInputProducts(onInputValue){
+
+            if(onInputValue != ""){
+                filteredProdcuctsList = [];
+
+                products.forEach(function(element){
+
+                    let productStrings1 = element.title.trim().split(" ");
+                    let productStrings2 = element.desc.trim().split(" ");
+
+                    let productStrings = productStrings1.concat(productStrings2);
+
+                    for(let indexOfProductStrings = 0; indexOfProductStrings< productStrings.length;indexOfProductStrings++){
+                        productStrings[indexOfProductStrings]= productStrings[indexOfProductStrings].toLowerCase();
+                    }
+
+                    let onInputStringsList = onInputValue.trim().split(" ");
+
+                        for( let onInputStringsListElement = 0; onInputStringsListElement <onInputStringsList.length;onInputStringsListElement++ ){
+                            let inputStringCheck = productStrings.indexOf(onInputStringsList[onInputStringsListElement].toLowerCase());
+                            if(inputStringCheck>=0 && element.gender== "female"){
+                                filteredProdcuctsList.push(element);
+                            }
+
+                        }
+                });
+
+                displayProducts(filteredProdcuctsList);
+
+            }
+
+            if(filteredProdcuctsList.length==0 && onInputValue != ""){
+                         document.querySelector('#serch_bar_not_found_result').innerHTML=
+                         `<h3>Sorry! We couldn't find any matching items for :
+                           <b>${onInputValue}</b>
+                           </h3> 
+                           <hr>
+                           <p>Don't give up - check the spelling, or try less specific search terms.</p>
+                         `;
+                         displayProducts(products);
+                    }else{
+                        document.querySelector('#serch_bar_not_found_result').innerHTML=""
+                    }
+
+
+
+            clearInterval(onInputTimeInterval);
+         }
+
+       function debouncingSerch(){
+
+        if(onInputTimeInterval){
+            clearInterval(onInputTimeInterval);
+        }
+
+         onInputTimeInterval =  setInterval(function(){
+
+            selectOnInputProducts(debouncingSerchBar.value);
+            debouncingSerchBar.value = "";
+
+
+        },1000)
+    }
+
 
     
         function addToCart(element,index){

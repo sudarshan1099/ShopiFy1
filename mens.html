@@ -69,6 +69,9 @@
     </select>
 
     <input type="text" id="searhBar" placeholder="Search Products">
+
+    <input oninput="debouncingSerch()" type="text" id="debouncingSerchBar" placeholder="Search Products on-input">
+
     </div>
 
     
@@ -155,6 +158,8 @@ let loggedDetails = {
             <a href="cart.html">CART</a>
             <a href="logout.html">LOGOUT</a>`;
     }
+
+    let onInputTimeInterval;
 
     let productsContainer = document.querySelector("#productsContainer");
 
@@ -340,6 +345,8 @@ searchBar.addEventListener("keypress",function(event){
         filteredProdcuctsList = [];
 
         let searchBarValue = searchBar.value; 
+        searchBar.value="";
+
         if( searchBarValue!=""){
 
         products.forEach(function(element){
@@ -365,7 +372,9 @@ searchBar.addEventListener("keypress",function(event){
                     }
 
                     if(validToPush){
-                    filteredProdcuctsList.push(element);
+                        if(element.gender == "male"){
+                            filteredProdcuctsList.push(element);
+                        }
                     }
                 }
             }
@@ -391,6 +400,77 @@ displayProducts(products);
 }
 
 });   
+
+
+    
+
+         // --------------- search on-input--------
+
+         function selectOnInputProducts(onInputValue){
+
+if(onInputValue != ""){
+    filteredProdcuctsList = [];
+
+    products.forEach(function(element){
+
+        let productStrings1 = element.title.trim().split(" ");
+        let productStrings2 = element.desc.trim().split(" ");
+
+        let productStrings = productStrings1.concat(productStrings2);
+
+        for(let indexOfProductStrings = 0; indexOfProductStrings< productStrings.length;indexOfProductStrings++){
+            productStrings[indexOfProductStrings]= productStrings[indexOfProductStrings].toLowerCase();
+        }
+
+        let onInputStringsList = onInputValue.trim().split(" ");
+
+            for( let onInputStringsListElement = 0; onInputStringsListElement <onInputStringsList.length;onInputStringsListElement++ ){
+                let inputStringCheck = productStrings.indexOf(onInputStringsList[onInputStringsListElement].toLowerCase());
+                if(inputStringCheck>=0 && element.gender== "male"){
+                    filteredProdcuctsList.push(element);
+                }
+
+            }
+    });
+
+    displayProducts(filteredProdcuctsList);
+
+}
+
+if(filteredProdcuctsList.length==0 && onInputValue != ""){
+             document.querySelector('#serch_bar_not_found_result').innerHTML=
+             `<h3>Sorry! We couldn't find any matching items for :
+               <b>${onInputValue}</b>
+               </h3> 
+               <hr>
+               <p>Don't give up - check the spelling, or try less specific search terms.</p>
+             `;
+             displayProducts(products);
+        }else{
+            document.querySelector('#serch_bar_not_found_result').innerHTML=""
+        }
+
+
+
+clearInterval(onInputTimeInterval);
+}
+
+function debouncingSerch(){
+
+if(onInputTimeInterval){
+clearInterval(onInputTimeInterval);
+}
+
+onInputTimeInterval =  setInterval(function(){
+
+selectOnInputProducts(debouncingSerchBar.value);
+
+debouncingSerchBar.value = "";
+
+},1000)
+}
+
+
 
     function addToCart(element,index){
         let added = true;
